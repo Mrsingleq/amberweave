@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amber Weave Fashion </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .banner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(to right, #f4f4f4, #e2e2e2);
+            padding: 20px;
+        }
+        .banner img {
+            max-width: 300px;
+            height: auto;
+        }
+        .content {
+            text-align: center;
+            margin: 50px;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #ff0077;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <img src="/static/images/fashion_week_1.jpg" alt="Fashion Week">
+        <img src="/static/images/fashion_week_2.jpg" alt="Exclusive Preview">
+        <img src="/static/images/fashion_week_3.jpg" alt="VIP Preview">
+    </div>
+    <div class="content">
+        <h1>Welcome to Amber Weave World of Fashion</h1>
+        <p>Explore the latest trends, styles, and everything in between.</p>
+        <a href="{% url 'instagram' %}" target="_blank" class="cta-button">Click To Continue</a>
+    </div>
+</body>
+</html>
